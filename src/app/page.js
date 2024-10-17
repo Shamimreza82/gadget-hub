@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Navber from "@/components/Navber";
+import Link from "next/link";
+
+
 
 export default function Home() {
   return (
     <div>
-      gadge hub
+      <Navber></Navber>
     </div>
   );
 }
