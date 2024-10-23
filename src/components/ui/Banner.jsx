@@ -1,21 +1,24 @@
 'use client'
+import bg1 from '@/assets/1.jpg'
+import bg2 from '@/assets/2.jpg'
+import bg3 from '@/assets/3.jpg'
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-// import required modules
+
+
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Image from 'next/image';
 
 const Banner = () => {
     return (
-        <div className='lg:flex  gap-4'>
-            <div className='border lg:w-[70%] h-[60vh]'>
+        <div className='lg:flex  gap-4 '>
+            <div className='border lg:w-[70%] '>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -28,23 +31,24 @@ const Banner = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="flex justify-center items-center h-full"
+                    className="flex justify-center items-center h-full z-10"
                 >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={bg1} alt='bg_image1'></Image>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={bg2} alt='bg_image1'></Image>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={bg3} alt='bg_image3'></Image>
+                    </SwiperSlide>
+
                 </Swiper>
             </div>
             <div className='border flex-grow'>
                 Right
             </div>
-        </div>
+        </div >
     );
 };
 

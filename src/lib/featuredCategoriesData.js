@@ -54,4 +54,5 @@ export const featuredCategoriesData = [
         icons: <IoIosTabletPortrait className="text-[75px]"/>,
         name: "Cover & Glass",
     },
+
 ]

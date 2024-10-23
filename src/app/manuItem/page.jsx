@@ -8,8 +8,8 @@ const MaunItems = () => {
 
     return (
         <div>
-            <nav className=" p-4 flex justify-center">
-                <ul className="flex gap-4">
+            <nav className=" p-4 flex justify-center ">
+                <ul className="flex gap-4 z-50">
                     {manuItem.map((item, index) => (
                         <li key={index} className="relative group">
                             <Link href={`/manuItem/${item.path}`} className="cursor-pointer hover:border-b-2 border-orange-400 hover:font-bold hover:text-slate-700 hover:scale-95">{item.title}</Link>

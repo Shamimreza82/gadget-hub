@@ -8,7 +8,7 @@ console.log(featuredCategoriesData);
 const FeaturedCategories = () => {
     return (
         <div>
-            <div className='text-center mt-14 space-y-2'>
+            <div className='text-center mt-14 space-y-2 '>
                 <h1 className='text-2xl'>FEATURED CATEGORIES</h1>
                 <h5>Get your desired product from featured category</h5>
             </div>
