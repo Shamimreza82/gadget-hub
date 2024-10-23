@@ -8,7 +8,7 @@ const MaunItems = () => {
 
     return (
         <div>
-            <nav className=" p-4 flex justify-center ">
+            <nav className=" p-4 flex justify-center  ">
                 <ul className="flex gap-4 z-50">
                     {manuItem.map((item, index) => (
                         <li key={index} className="relative group">

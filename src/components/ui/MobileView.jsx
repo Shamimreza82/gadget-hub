@@ -7,7 +7,7 @@ const MobileView = () => {
 
 
     return (
-        <div className="drawer lg:invisible">
+        <div className="drawer z-50 h-full ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 <label

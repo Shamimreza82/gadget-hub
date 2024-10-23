@@ -1,8 +1,8 @@
-import Navber from "@/components/Navber";
 import Banner from "@/components/ui/Banner";
 import Feature from "@/components/ui/Feature";
 import FeaturedCategories from "@/components/ui/FeaturedCategories";
-import Link from "next/link";
+import FeaturedProducts from "@/components/ui/FeaturedProducts";
+import ReadyForOrder from "@/components/ui/ReadyForOrder";
 
 
 
@@ -12,6 +12,8 @@ export default function Home() {
       <Banner/>
       <Feature/>
       <FeaturedCategories/>
+      <ReadyForOrder/>
+      <FeaturedProducts/>
     </div>
   );
 }

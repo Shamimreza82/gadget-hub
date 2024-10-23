@@ -17,8 +17,8 @@ import Image from 'next/image';
 
 const Banner = () => {
     return (
-        <div className='lg:flex  gap-4 '>
-            <div className='border lg:w-[70%] '>
+        <div className='lg:flex gap-4 '>
+            <div className='lg:w-[70%] '>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -33,14 +33,14 @@ const Banner = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="flex justify-center items-center h-full z-10"
                 >
-                    <SwiperSlide>
-                        <Image src={bg1} alt='bg_image1'></Image>
+                    <SwiperSlide >
+                        <Image src={bg1} alt='bg_image1' className='rounded-md'></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={bg2} alt='bg_image1'></Image>
+                        <Image src={bg2} alt='bg_image1' className='rounded-md'></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={bg3} alt='bg_image3'></Image>
+                        <Image src={bg3} alt='bg_image3' className='rounded-md'></Image>
                     </SwiperSlide>
 
                 </Swiper>
