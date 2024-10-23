@@ -1,7 +1,10 @@
 'use client'
 import React from 'react';
+import { manuItem } from '@/lib/itemsData.js';
 
-const MobileView = ({manuItem}) => {
+const MobileView = () => {
+
+
 
     return (
         <div className="drawer lg:invisible">
